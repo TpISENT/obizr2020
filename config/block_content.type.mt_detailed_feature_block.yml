@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: mt_detailed_feature_block
+label: 'Detailed Feature Block'
+revision: 0
+description: ''
