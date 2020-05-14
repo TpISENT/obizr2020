@@ -1,0 +1,151 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_agent.field_mt_agt_body
+    - field.field.node.mt_agent.field_mt_agt_email
+    - field.field.node.mt_agent.field_mt_agt_facebook
+    - field.field.node.mt_agent.field_mt_agt_fax
+    - field.field.node.mt_agent.field_mt_agt_image
+    - field.field.node.mt_agent.field_mt_agt_instagram
+    - field.field.node.mt_agent.field_mt_agt_linkedin
+    - field.field.node.mt_agent.field_mt_agt_location
+    - field.field.node.mt_agent.field_mt_agt_mobile
+    - field.field.node.mt_agent.field_mt_agt_phone
+    - field.field.node.mt_agent.field_mt_agt_twitter
+    - field.field.node.mt_agent.field_mt_agt_website
+    - filter.format.basic_html
+    - image.style.mt_member_photo
+    - node.type.mt_agent
+  module:
+    - geolocation
+    - image
+    - link
+    - text
+    - user
+id: node.mt_agent.default
+targetEntityType: node
+bundle: mt_agent
+mode: default
+content:
+  field_mt_agt_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_agt_email:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_mt_agt_facebook:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_agt_fax:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_agt_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_agt_instagram:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_agt_linkedin:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_agt_location:
+    weight: 12
+    label: hidden
+    settings:
+      title: ''
+      set_marker: '1'
+      common_map: '1'
+      data_provider_settings: {  }
+      map_provider_id: google_maps
+      centre:
+        fit_bounds:
+          enable: true
+          weight: -101
+          map_center_id: fit_bounds
+          settings:
+            reset_zoom: true
+      map_provider_settings: {  }
+      info_text:
+        value: ''
+        format: basic_html
+      use_overridden_map_settings: 0
+    third_party_settings: {  }
+    type: geolocation_map
+    region: content
+  field_mt_agt_mobile:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_agt_phone:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_agt_twitter:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_agt_website:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

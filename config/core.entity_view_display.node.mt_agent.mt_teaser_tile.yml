@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_teaser_tile
+    - field.field.node.mt_agent.field_mt_agt_body
+    - field.field.node.mt_agent.field_mt_agt_email
+    - field.field.node.mt_agent.field_mt_agt_facebook
+    - field.field.node.mt_agent.field_mt_agt_fax
+    - field.field.node.mt_agent.field_mt_agt_image
+    - field.field.node.mt_agent.field_mt_agt_instagram
+    - field.field.node.mt_agent.field_mt_agt_linkedin
+    - field.field.node.mt_agent.field_mt_agt_location
+    - field.field.node.mt_agent.field_mt_agt_mobile
+    - field.field.node.mt_agent.field_mt_agt_phone
+    - field.field.node.mt_agent.field_mt_agt_twitter
+    - field.field.node.mt_agent.field_mt_agt_website
+    - image.style.mt_member_photo
+    - node.type.mt_agent
+  module:
+    - image
+    - user
+id: node.mt_agent.mt_teaser_tile
+targetEntityType: node
+bundle: mt_agent
+mode: mt_teaser_tile
+content:
+  field_mt_agt_email:
+    type: email_mailto
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_mt_agt_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_agt_phone:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_agt_body: true
+  field_mt_agt_facebook: true
+  field_mt_agt_fax: true
+  field_mt_agt_instagram: true
+  field_mt_agt_linkedin: true
+  field_mt_agt_location: true
+  field_mt_agt_mobile: true
+  field_mt_agt_twitter: true
+  field_mt_agt_website: true

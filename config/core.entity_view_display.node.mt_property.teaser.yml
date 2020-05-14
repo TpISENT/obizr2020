@@ -1,0 +1,109 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_property.field_mt_prt_address
+    - field.field.node.mt_property.field_mt_prt_agent
+    - field.field.node.mt_property.field_mt_prt_amenities
+    - field.field.node.mt_property.field_mt_prt_banner_carousel
+    - field.field.node.mt_property.field_mt_prt_baths
+    - field.field.node.mt_property.field_mt_prt_body
+    - field.field.node.mt_property.field_mt_prt_city
+    - field.field.node.mt_property.field_mt_prt_construction_year
+    - field.field.node.mt_property.field_mt_prt_contact_link
+    - field.field.node.mt_property.field_mt_prt_contract
+    - field.field.node.mt_property.field_mt_prt_energy_consumption
+    - field.field.node.mt_property.field_mt_prt_floor
+    - field.field.node.mt_property.field_mt_prt_heating_medium
+    - field.field.node.mt_property.field_mt_prt_heating_system
+    - field.field.node.mt_property.field_mt_prt_image
+    - field.field.node.mt_property.field_mt_prt_location
+    - field.field.node.mt_property.field_mt_prt_price
+    - field.field.node.mt_property.field_mt_prt_property_features
+    - field.field.node.mt_property.field_mt_prt_property_id
+    - field.field.node.mt_property.field_mt_prt_rooms
+    - field.field.node.mt_property.field_mt_prt_special_offer
+    - field.field.node.mt_property.field_mt_prt_sponsored
+    - field.field.node.mt_property.field_mt_prt_subheader_body
+    - field.field.node.mt_property.field_mt_prt_surface
+    - field.field.node.mt_property.field_mt_prt_teaser_image
+    - field.field.node.mt_property.field_mt_prt_type
+    - image.style.large
+    - node.type.mt_property
+  module:
+    - image
+    - text
+    - user
+id: node.mt_property.teaser
+targetEntityType: node
+bundle: mt_property
+mode: teaser
+content:
+  field_mt_prt_body:
+    type: text_summary_or_trimmed
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_prt_price:
+    type: number_integer
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_mt_prt_teaser_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  field_mt_prt_type:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  flag_mt_my_listings:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_prt_address: true
+  field_mt_prt_agent: true
+  field_mt_prt_amenities: true
+  field_mt_prt_banner_carousel: true
+  field_mt_prt_baths: true
+  field_mt_prt_city: true
+  field_mt_prt_construction_year: true
+  field_mt_prt_contact_link: true
+  field_mt_prt_contract: true
+  field_mt_prt_energy_consumption: true
+  field_mt_prt_floor: true
+  field_mt_prt_heating_medium: true
+  field_mt_prt_heating_system: true
+  field_mt_prt_image: true
+  field_mt_prt_location: true
+  field_mt_prt_property_features: true
+  field_mt_prt_property_id: true
+  field_mt_prt_rooms: true
+  field_mt_prt_special_offer: true
+  field_mt_prt_sponsored: true
+  field_mt_prt_subheader_body: true
+  field_mt_prt_surface: true

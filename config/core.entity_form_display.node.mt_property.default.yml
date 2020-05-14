@@ -1,0 +1,330 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_property.field_mt_prt_address
+    - field.field.node.mt_property.field_mt_prt_agent
+    - field.field.node.mt_property.field_mt_prt_amenities
+    - field.field.node.mt_property.field_mt_prt_banner_carousel
+    - field.field.node.mt_property.field_mt_prt_baths
+    - field.field.node.mt_property.field_mt_prt_body
+    - field.field.node.mt_property.field_mt_prt_city
+    - field.field.node.mt_property.field_mt_prt_construction_year
+    - field.field.node.mt_property.field_mt_prt_contact_link
+    - field.field.node.mt_property.field_mt_prt_contract
+    - field.field.node.mt_property.field_mt_prt_energy_consumption
+    - field.field.node.mt_property.field_mt_prt_floor
+    - field.field.node.mt_property.field_mt_prt_heating_medium
+    - field.field.node.mt_property.field_mt_prt_heating_system
+    - field.field.node.mt_property.field_mt_prt_image
+    - field.field.node.mt_property.field_mt_prt_location
+    - field.field.node.mt_property.field_mt_prt_price
+    - field.field.node.mt_property.field_mt_prt_property_features
+    - field.field.node.mt_property.field_mt_prt_property_id
+    - field.field.node.mt_property.field_mt_prt_rooms
+    - field.field.node.mt_property.field_mt_prt_special_offer
+    - field.field.node.mt_property.field_mt_prt_sponsored
+    - field.field.node.mt_property.field_mt_prt_subheader_body
+    - field.field.node.mt_property.field_mt_prt_surface
+    - field.field.node.mt_property.field_mt_prt_teaser_image
+    - field.field.node.mt_property.field_mt_prt_type
+    - image.style.thumbnail
+    - node.type.mt_property
+  module:
+    - geolocation_google_maps
+    - image
+    - link
+    - paragraphs
+    - path
+    - text
+id: node.mt_property.default
+targetEntityType: node
+bundle: mt_property
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mt_prt_address:
+    weight: 20
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prt_agent:
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_prt_amenities:
+    type: entity_reference_paragraphs
+    weight: 23
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prt_banner_carousel:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_prt_baths:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_prt_body:
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_prt_city:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prt_construction_year:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prt_contact_link:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_prt_contract:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_prt_energy_consumption:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_prt_floor:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prt_heating_medium:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_prt_heating_system:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_prt_image:
+    weight: 18
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_prt_location:
+    weight: 22
+    settings:
+      centre:
+        fit_bounds:
+          enable: true
+      auto_client_location: ''
+      auto_client_location_marker: ''
+      allow_override_map_settings: 0
+      google_map_settings:
+        map_features:
+          marker_infowindow:
+            enabled: true
+          control_locate:
+            enabled: true
+          control_zoom:
+            enabled: true
+          control_maptype:
+            enabled: true
+          control_geocoder:
+            enabled: true
+            weight: -100
+          control_recenter:
+            enabled: true
+        type: ROADMAP
+        zoom: 10
+        height: 400px
+        width: 100%
+        minZoom: 0
+        maxZoom: 18
+        rotateControl: false
+        gestureHandling: auto
+      hide_textfield_form: false
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_mt_prt_price:
+    weight: 17
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_prt_property_features:
+    type: entity_reference_paragraphs
+    weight: 24
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prt_property_id:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prt_rooms:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_prt_special_offer:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mt_prt_sponsored:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mt_prt_subheader_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_prt_surface:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prt_teaser_image:
+    weight: 19
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_prt_type:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 29
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 27
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 30
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 28
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 25
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

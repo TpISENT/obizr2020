@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_property_features.field_mt_pf_title
+    - field.field.paragraph.mt_property_features.field_mt_pf_value
+    - paragraphs.paragraphs_type.mt_property_features
+id: paragraph.mt_property_features.default
+targetEntityType: paragraph
+bundle: mt_property_features
+mode: default
+content:
+  field_mt_pf_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_pf_value:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

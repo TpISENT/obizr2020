@@ -1,0 +1,215 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_agent.field_mt_agt_body
+    - field.field.node.mt_agent.field_mt_agt_email
+    - field.field.node.mt_agent.field_mt_agt_facebook
+    - field.field.node.mt_agent.field_mt_agt_fax
+    - field.field.node.mt_agent.field_mt_agt_image
+    - field.field.node.mt_agent.field_mt_agt_instagram
+    - field.field.node.mt_agent.field_mt_agt_linkedin
+    - field.field.node.mt_agent.field_mt_agt_location
+    - field.field.node.mt_agent.field_mt_agt_mobile
+    - field.field.node.mt_agent.field_mt_agt_phone
+    - field.field.node.mt_agent.field_mt_agt_twitter
+    - field.field.node.mt_agent.field_mt_agt_website
+    - image.style.thumbnail
+    - node.type.mt_agent
+  module:
+    - geolocation_google_maps
+    - image_widget_crop
+    - link
+    - path
+    - text
+id: node.mt_agent.default
+targetEntityType: node
+bundle: mt_agent
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mt_agt_body:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_agt_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_mt_agt_facebook:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_agt_fax:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_agt_image:
+    weight: 11
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - mt_team_member_photo
+      crop_types_required:
+        - mt_team_member_photo
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_mt_agt_instagram:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_agt_linkedin:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_agt_location:
+    weight: 12
+    settings:
+      centre:
+        fit_bounds:
+          enable: true
+      auto_client_location: ''
+      auto_client_location_marker: ''
+      allow_override_map_settings: 0
+      google_map_settings:
+        map_features:
+          marker_infowindow:
+            enabled: true
+          control_locate:
+            enabled: true
+          control_zoom:
+            enabled: true
+          control_maptype:
+            enabled: true
+          control_geocoder:
+            enabled: true
+            weight: -100
+          control_recenter:
+            enabled: true
+        type: ROADMAP
+        zoom: 10
+        height: 400px
+        width: 100%
+        minZoom: 0
+        maxZoom: 18
+        rotateControl: false
+        gestureHandling: auto
+      hide_textfield_form: false
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_mt_agt_mobile:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_agt_phone:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_agt_twitter:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_agt_website:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  path:
+    type: path
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 18
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

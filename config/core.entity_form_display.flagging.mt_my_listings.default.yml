@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.mt_my_listings
+id: flagging.mt_my_listings.default
+targetEntityType: flagging
+bundle: mt_my_listings
+mode: default
+content: {  }
+hidden: {  }

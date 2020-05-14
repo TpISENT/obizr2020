@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_property_amenity.field_mt_pa_available
+    - field.field.paragraph.mt_property_amenity.field_mt_pa_title
+    - paragraphs.paragraphs_type.mt_property_amenity
+id: paragraph.mt_property_amenity.default
+targetEntityType: paragraph
+bundle: mt_property_amenity
+mode: default
+content:
+  field_mt_pa_available:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_mt_pa_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
