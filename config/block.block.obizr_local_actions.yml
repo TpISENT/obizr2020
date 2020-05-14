@@ -1,0 +1,20 @@
+uuid: a5a773bc-cfc7-40b7-a741-60e0c8fdc5af
+langcode: en
+status: true
+dependencies:
+  theme:
+    - obizr
+_core:
+  default_config_hash: C-bLeGPNfaPd0CpobPTcNnuFsW05TpUVkeRgSMwH3bo
+id: obizr_local_actions
+theme: obizr
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

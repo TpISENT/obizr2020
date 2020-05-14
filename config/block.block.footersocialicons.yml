@@ -1,0 +1,25 @@
+uuid: 756e0fc3-ceb6-4e1f-b8a2-2baff6ad27ed
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:99c0b64b-f90a-4d36-84cb-8b01c7c147b1'
+  module:
+    - block_content
+  theme:
+    - obizr
+id: footersocialicons
+theme: obizr
+region: footer_top_second
+weight: 0
+provider: null
+plugin: 'block_content:99c0b64b-f90a-4d36-84cb-8b01c7c147b1'
+settings:
+  id: 'block_content:99c0b64b-f90a-4d36-84cb-8b01c7c147b1'
+  label: 'Footer Social Icons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

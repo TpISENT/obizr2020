@@ -1,0 +1,22 @@
+uuid: 74a11a47-1cf8-4889-9ca6-426c143e8655
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - obizr
+_core:
+  default_config_hash: PwqHO1KY6wlWCZrmcj0Cl3W48vOK5AHLWyP3XOsHsK4
+id: obizr_messages
+theme: obizr
+region: system_messages
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: 18d4da09-c974-4d87-befb-9fb67220f5f6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2e625aec-61f9-40f3-a961-9570118d9813'
+  module:
+    - block_content
+    - system
+  theme:
+    - obizr
+id: subscriptionplans
+theme: obizr
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:2e625aec-61f9-40f3-a961-9570118d9813'
+settings:
+  id: 'block_content:2e625aec-61f9-40f3-a961-9570118d9813'
+  label: 'Subscription Plans'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

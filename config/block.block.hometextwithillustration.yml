@@ -1,0 +1,31 @@
+uuid: ca997638-bc5e-46ca-a1df-0ebf026788df
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5513fc57-0cde-4773-959e-91d06a22217a'
+  module:
+    - block_content
+    - system
+  theme:
+    - obizr
+id: hometextwithillustration
+theme: obizr
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:5513fc57-0cde-4773-959e-91d06a22217a'
+settings:
+  id: 'block_content:5513fc57-0cde-4773-959e-91d06a22217a'
+  label: 'Home: Text with Illustration'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

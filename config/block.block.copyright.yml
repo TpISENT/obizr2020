@@ -1,0 +1,25 @@
+uuid: e2e271bc-800a-46f3-9f59-54e566df0aef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f0b52c10-27fa-4565-bd34-a58b97b87107'
+  module:
+    - block_content
+  theme:
+    - obizr
+id: copyright
+theme: obizr
+region: sub_footer_first
+weight: 0
+provider: null
+plugin: 'block_content:f0b52c10-27fa-4565-bd34-a58b97b87107'
+settings:
+  id: 'block_content:f0b52c10-27fa-4565-bd34-a58b97b87107'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

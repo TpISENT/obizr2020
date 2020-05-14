@@ -1,0 +1,27 @@
+uuid: 47f4de45-8671-4205-9fa2-9fe05dd50aca
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - obizr
+_core:
+  default_config_hash: 8tbOuNCX7WPeGUogzTlI4lWA0Mx1PJYKFBug98bbCps
+id: obizr_breadcrumbs
+theme: obizr
+region: system_messages
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

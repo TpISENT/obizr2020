@@ -1,0 +1,22 @@
+uuid: 21418ca5-0962-445e-9b7f-881bed8d2a65
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - obizr
+_core:
+  default_config_hash: OkvnLdhi9IMWqNeRmbYt1_AjkbGSziZR8VwQw3bBOTA
+id: obizr_help
+theme: obizr
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

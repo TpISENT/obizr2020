@@ -1,0 +1,22 @@
+uuid: 7cc1b5a5-e504-4349-b94a-2d647a30bd85
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - obizr
+_core:
+  default_config_hash: 8BlTaXSU75rIGYp2WoCJKF68QzBem5FZKzmDLxJ_OfQ
+id: obizr_content
+theme: obizr
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: 697db479-834f-4166-9553-a409ee6eefe1
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:3f45298c-c512-4631-b202-74fec9d536b4'
+  module:
+    - block_content
+    - system
+  theme:
+    - obizr
+id: useobizrtoquicklyfindtopratedbusinessesnearyou
+theme: obizr
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:3f45298c-c512-4631-b202-74fec9d536b4'
+settings:
+  id: 'block_content:3f45298c-c512-4631-b202-74fec9d536b4'
+  label: 'Use OBizR to quickly find top rated businesses NEAR YOU'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

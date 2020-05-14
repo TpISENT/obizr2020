@@ -1,0 +1,25 @@
+uuid: 9046fc9b-f737-43f9-a4a4-d30682e7d87c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - obizr
+_core:
+  default_config_hash: B42Q-kRHTX9js9MXHaUuKhRB_y_dLen7rhf6GH7lShU
+id: obizr_branding
+theme: obizr
+region: header_first
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 6ddae88f-5c0c-4109-875b-eea4064cdb82
+langcode: en
+status: true
+dependencies:
+  theme:
+    - obizr
+_core:
+  default_config_hash: NQH16pFgJqJC0RFHN1iyvZO16A-dobmDdHH7mCf8698
+id: obizr_local_tasks
+theme: obizr
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

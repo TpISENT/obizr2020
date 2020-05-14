@@ -1,0 +1,25 @@
+uuid: 6cec7b3c-cf43-4e8d-b5d0-a7bf17ab3e67
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - obizr
+id: useraccountmenu
+theme: obizr
+region: header_top_highlighted_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

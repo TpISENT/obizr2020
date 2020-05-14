@@ -1,0 +1,20 @@
+uuid: f2042643-4852-42ef-886a-da3d2b8ca876
+langcode: en
+status: true
+dependencies:
+  theme:
+    - obizr
+_core:
+  default_config_hash: qI5ofgX6Tp_wo8qrWOa7NyEHpVPkA-t6NKlZAeqqZFA
+id: obizr_page_title
+theme: obizr
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
