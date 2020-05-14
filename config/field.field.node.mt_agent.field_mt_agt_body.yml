@@ -1,0 +1,23 @@
+uuid: c29b6dcd-eb6e-42b8-921a-817249786264
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_agt_body
+    - node.type.mt_agent
+  module:
+    - text
+id: node.mt_agent.field_mt_agt_body
+field_name: field_mt_agt_body
+entity_type: node
+bundle: mt_agent
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

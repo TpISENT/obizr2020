@@ -1,0 +1,21 @@
+uuid: b2869e9f-fb02-4915-b188-8fa0627c35c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero_block
+    - field.storage.block_content.field_mt_hero_body
+  module:
+    - text
+id: block_content.mt_hero_block.field_mt_hero_body
+field_name: field_mt_hero_body
+entity_type: block_content
+bundle: mt_hero_block
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

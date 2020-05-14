@@ -1,0 +1,29 @@
+uuid: 0d0accbb-f72f-4338-bc98-3e6dfec9a6a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_heating_medium
+    - node.type.mt_property
+    - taxonomy.vocabulary.mt_heating_medium
+id: node.mt_property.field_mt_prt_heating_medium
+field_name: field_mt_prt_heating_medium
+entity_type: node
+bundle: mt_property
+label: 'Heating medium'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_heating_medium: mt_heating_medium
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

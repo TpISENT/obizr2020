@@ -1,0 +1,21 @@
+uuid: fc5f3828-0067-4bad-9878-885dd14cc2cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_tab_content
+    - paragraphs.paragraphs_type.mt_tab
+  module:
+    - text
+id: paragraph.mt_tab.field_mt_tab_content
+field_name: field_mt_tab_content
+entity_type: paragraph
+bundle: mt_tab
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

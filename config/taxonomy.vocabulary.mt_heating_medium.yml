@@ -1,0 +1,8 @@
+uuid: 2f717566-a989-4e89-8370-8cccf606aba7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Heating medium'
+vid: mt_heating_medium
+description: ''
+weight: 0

@@ -1,0 +1,23 @@
+uuid: 5842f520-59c3-42a0-8824-7f02cb4eb652
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_energy_consumption
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_energy_consumption
+field_name: field_mt_prt_energy_consumption
+entity_type: node
+bundle: mt_property
+label: 'Energy consumption'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 700
+  prefix: ''
+  suffix: kWh/m²
+field_type: integer

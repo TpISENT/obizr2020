@@ -1,0 +1,23 @@
+uuid: 9886e309-a9f3-4895-8c37-ac665c19f28e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_pa_available
+    - paragraphs.paragraphs_type.mt_property_amenity
+id: paragraph.mt_property_amenity.field_mt_pa_available
+field_name: field_mt_pa_available
+entity_type: paragraph
+bundle: mt_property_amenity
+label: Available
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'true'
+  off_label: 'false'
+field_type: boolean

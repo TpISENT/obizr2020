@@ -1,0 +1,23 @@
+uuid: 29320c75-4aa6-4605-833e-ac2e0cde38b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_agt_website
+    - node.type.mt_agent
+  module:
+    - link
+id: node.mt_agent.field_mt_agt_website
+field_name: field_mt_agt_website
+entity_type: node
+bundle: mt_agent
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

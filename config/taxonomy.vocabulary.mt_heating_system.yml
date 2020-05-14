@@ -1,0 +1,8 @@
+uuid: fc0e2bae-2295-48ff-8ba9-5413f5fdcbe6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Heating system'
+vid: mt_heating_system
+description: ''
+weight: 0

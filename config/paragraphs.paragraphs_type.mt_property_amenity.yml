@@ -1,0 +1,10 @@
+uuid: cd439124-0e63-46b1-936b-ba44a94a48a5
+langcode: en
+status: true
+dependencies: {  }
+id: mt_property_amenity
+label: 'Property amenity'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

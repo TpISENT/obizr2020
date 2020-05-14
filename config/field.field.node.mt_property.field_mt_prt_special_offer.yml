@@ -1,0 +1,23 @@
+uuid: c8a5f26c-0015-4092-86f5-20740af1184b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_special_offer
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_special_offer
+field_name: field_mt_prt_special_offer
+entity_type: node
+bundle: mt_property
+label: 'Special Offer'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

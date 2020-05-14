@@ -1,0 +1,19 @@
+uuid: fa23d3d1-8a57-442c-b425-670237e8dc18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_agt_email
+    - node.type.mt_agent
+id: node.mt_agent.field_mt_agt_email
+field_name: field_mt_agt_email
+entity_type: node
+bundle: mt_agent
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

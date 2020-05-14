@@ -1,0 +1,10 @@
+uuid: 3f75d586-b7e2-46a8-85ec-1354d62c9324
+langcode: en
+status: true
+dependencies: {  }
+id: mt_detailed_feature
+label: 'Detailed Feature'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,12 @@
+uuid: d9d3fbe5-6736-4430-9985-86d600805b49
+langcode: en
+status: true
+dependencies: {  }
+id: mt_team_member_photo_landscape
+label: 'Team Member Photo (Landscape)'
+description: ''
+aspect_ratio: '1300:650'
+soft_limit_width: 1300
+soft_limit_height: 650
+hard_limit_width: null
+hard_limit_height: null

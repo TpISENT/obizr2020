@@ -1,0 +1,8 @@
+uuid: 00b0899d-1053-4cff-8987-5df627e4c451
+langcode: en
+status: true
+dependencies: {  }
+name: 'Property type'
+vid: mt_property_type
+description: ''
+weight: 0

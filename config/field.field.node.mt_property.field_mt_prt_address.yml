@@ -1,0 +1,19 @@
+uuid: fb6401ff-0ba3-4cb3-b1fa-7c00b80c5a3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_address
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_address
+field_name: field_mt_prt_address
+entity_type: node
+bundle: mt_property
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

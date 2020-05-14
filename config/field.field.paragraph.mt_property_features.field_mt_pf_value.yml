@@ -1,0 +1,19 @@
+uuid: e3606b8a-f8df-43e0-b73c-85a43e75ef4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_pf_value
+    - paragraphs.paragraphs_type.mt_property_features
+id: paragraph.mt_property_features.field_mt_pf_value
+field_name: field_mt_pf_value
+entity_type: paragraph
+bundle: mt_property_features
+label: Value
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

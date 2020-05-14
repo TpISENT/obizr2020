@@ -1,0 +1,23 @@
+uuid: e6d78fde-c11d-48c0-bd6e-70b78a56d6ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_rooms
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_rooms
+field_name: field_mt_prt_rooms
+entity_type: node
+bundle: mt_property
+label: Rooms
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

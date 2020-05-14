@@ -1,0 +1,103 @@
+uuid: 08f9a019-6dc5-4fae-b1a8-dd52be922a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fg_features
+    - paragraphs.paragraphs_type.mt_features_group
+    - paragraphs.paragraphs_type.mt_property_features
+  module:
+    - entity_reference_revisions
+id: paragraph.mt_features_group.field_mt_fg_features
+field_name: field_mt_fg_features
+entity_type: paragraph
+bundle: mt_features_group
+label: Features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_property_features: mt_property_features
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 26
+        enabled: false
+      mt_collapse:
+        weight: 27
+        enabled: false
+      mt_detailed_feature:
+        weight: 28
+        enabled: false
+      mt_dropdown:
+        weight: 29
+        enabled: false
+      mt_fa_icon:
+        weight: 30
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 31
+        enabled: false
+      mt_fancy_tab:
+        weight: 32
+        enabled: false
+      mt_feature:
+        weight: 33
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 34
+        enabled: false
+      mt_features_group:
+        weight: 35
+        enabled: false
+      mt_highlight:
+        weight: 36
+        enabled: false
+      mt_how_it_works_item:
+        weight: 37
+        enabled: false
+      mt_icon_features:
+        weight: 38
+        enabled: false
+      mt_image_button:
+        weight: 39
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 40
+        enabled: false
+      mt_map_location:
+        weight: 41
+        enabled: false
+      mt_media_tab:
+        weight: 42
+        enabled: false
+      mt_prd_specification:
+        weight: 43
+        enabled: false
+      mt_properties_details_titles:
+        weight: 44
+        enabled: false
+      mt_property_amenity:
+        weight: 45
+        enabled: false
+      mt_property_features:
+        enabled: true
+        weight: 46
+      mt_tab:
+        weight: 47
+        enabled: false
+      mt_timeline_item:
+        weight: 48
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 49
+        enabled: false
+      properties_details_values:
+        weight: 50
+        enabled: false
+field_type: entity_reference_revisions

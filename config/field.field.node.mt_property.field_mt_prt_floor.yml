@@ -1,0 +1,19 @@
+uuid: a262520a-42ce-4f0f-9142-e4ded149b9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_floor
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_floor
+field_name: field_mt_prt_floor
+entity_type: node
+bundle: mt_property
+label: Floor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 0efa1a32-c2be-4f93-8da8-a836c3b7cd0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_city
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_city
+field_name: field_mt_prt_city
+entity_type: node
+bundle: mt_property
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

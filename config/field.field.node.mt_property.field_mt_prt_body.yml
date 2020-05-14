@@ -1,0 +1,23 @@
+uuid: 6e467fa7-e48d-43b5-aed9-7085625313b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_body
+    - node.type.mt_property
+  module:
+    - text
+id: node.mt_property.field_mt_prt_body
+field_name: field_mt_prt_body
+entity_type: node
+bundle: mt_property
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

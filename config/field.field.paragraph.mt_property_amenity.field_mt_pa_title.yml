@@ -1,0 +1,19 @@
+uuid: 78e66911-4ef0-43d8-bdb1-d69839d90d98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_pa_title
+    - paragraphs.paragraphs_type.mt_property_amenity
+id: paragraph.mt_property_amenity.field_mt_pa_title
+field_name: field_mt_pa_title
+entity_type: paragraph
+bundle: mt_property_amenity
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

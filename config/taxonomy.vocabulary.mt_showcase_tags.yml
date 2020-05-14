@@ -1,0 +1,8 @@
+uuid: a36f7a44-c2e1-4a2b-aed5-55c5d5774dbe
+langcode: en
+status: true
+dependencies: {  }
+name: 'Showcase Tags'
+vid: mt_showcase_tags
+description: ''
+weight: 0

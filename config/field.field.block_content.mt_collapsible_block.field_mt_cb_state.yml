@@ -1,0 +1,23 @@
+uuid: deaa4359-6fbb-4eb7-8a5a-d6d4af0176da
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_collapsible_block
+    - field.storage.block_content.field_mt_cb_state
+  module:
+    - options
+id: block_content.mt_collapsible_block.field_mt_cb_state
+field_name: field_mt_cb_state
+entity_type: block_content
+bundle: mt_collapsible_block
+label: 'Collapse initial state'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: expanded
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 812be4bf-dd38-4fda-8eb5-181cb52470f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_subheader_body
+    - node.type.mt_property
+  module:
+    - text
+id: node.mt_property.field_mt_prt_subheader_body
+field_name: field_mt_prt_subheader_body
+entity_type: node
+bundle: mt_property
+label: 'Subheader body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

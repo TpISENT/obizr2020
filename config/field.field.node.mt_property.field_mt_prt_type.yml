@@ -1,0 +1,29 @@
+uuid: b6d8663b-177c-4ecd-b233-250daed57fe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_type
+    - node.type.mt_property
+    - taxonomy.vocabulary.mt_property_type
+id: node.mt_property.field_mt_prt_type
+field_name: field_mt_prt_type
+entity_type: node
+bundle: mt_property
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_property_type: mt_property_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

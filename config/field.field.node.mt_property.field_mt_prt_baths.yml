@@ -1,0 +1,23 @@
+uuid: 05e79f5d-e2e6-4ae3-8d45-cb87c58d37eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_baths
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_baths
+field_name: field_mt_prt_baths
+entity_type: node
+bundle: mt_property
+label: Baths
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

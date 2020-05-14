@@ -1,0 +1,25 @@
+uuid: 9cae5ea0-d701-45dc-8f98-e89cd4e8a1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_shw_video
+    - node.type.mt_showcase
+  module:
+    - video_embed_field
+id: node.mt_showcase.field_mt_shw_video
+field_name: field_mt_shw_video
+entity_type: node
+bundle: mt_showcase
+label: 'Video URL'
+description: 'Provide the URL of the Video you''d like to embed from a supported provider (i.e. Vimeo or Youtube)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

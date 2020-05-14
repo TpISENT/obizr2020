@@ -1,0 +1,29 @@
+uuid: cbfca130-8da7-4603-85cc-911a1ea11a50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_contract
+    - node.type.mt_property
+    - taxonomy.vocabulary.mt_type_of_contract
+id: node.mt_property.field_mt_prt_contract
+field_name: field_mt_prt_contract
+entity_type: node
+bundle: mt_property
+label: Contract
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_type_of_contract: mt_type_of_contract
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

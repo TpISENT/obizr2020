@@ -1,0 +1,10 @@
+uuid: ba546ddc-7792-407a-9f65-65ca2867d498
+langcode: en
+status: true
+dependencies: {  }
+id: mt_property_features
+label: 'Property features'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

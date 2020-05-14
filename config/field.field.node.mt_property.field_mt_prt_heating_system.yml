@@ -1,0 +1,29 @@
+uuid: ccfc2b08-026a-4aa9-bc26-542dfcd308b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_heating_system
+    - node.type.mt_property
+    - taxonomy.vocabulary.mt_heating_system
+id: node.mt_property.field_mt_prt_heating_system
+field_name: field_mt_prt_heating_system
+entity_type: node
+bundle: mt_property
+label: 'Heating system'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_heating_system: mt_heating_system
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

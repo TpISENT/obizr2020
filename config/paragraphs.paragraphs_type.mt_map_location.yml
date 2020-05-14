@@ -1,0 +1,10 @@
+uuid: 47690488-0e44-49ad-acff-0bd4a01d9985
+langcode: en
+status: true
+dependencies: {  }
+id: mt_map_location
+label: 'Map Location'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: deb92725-5ac0-4241-a715-60b679209ef7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_agt_location
+    - node.type.mt_agent
+  module:
+    - geolocation
+id: node.mt_agent.field_mt_agt_location
+field_name: field_mt_agt_location
+entity_type: node
+bundle: mt_agent
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

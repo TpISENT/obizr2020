@@ -1,0 +1,28 @@
+uuid: 574a6383-547b-4993-8413-3ea74217e8f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prt_agent
+    - node.type.mt_agent
+    - node.type.mt_property
+id: node.mt_property.field_mt_prt_agent
+field_name: field_mt_prt_agent
+entity_type: node
+bundle: mt_property
+label: Agent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_agent: mt_agent
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

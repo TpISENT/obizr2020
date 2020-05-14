@@ -1,0 +1,19 @@
+uuid: bf013208-8b40-4536-b87b-216901ee04f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_agt_phone
+    - node.type.mt_agent
+id: node.mt_agent.field_mt_agt_phone
+field_name: field_mt_agt_phone
+entity_type: node
+bundle: mt_agent
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
