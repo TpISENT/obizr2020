@@ -1,5 +1,116 @@
 [
     {
+        "name": "acquia/blt",
+        "version": "11.4.1",
+        "version_normalized": "11.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/acquia/blt.git",
+            "reference": "de1e1ae9d71a4fcfcdd3a383b2f8d724424a2a22"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/acquia/blt/zipball/de1e1ae9d71a4fcfcdd3a383b2f8d724424a2a22",
+            "reference": "de1e1ae9d71a4fcfcdd3a383b2f8d724424a2a22",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.1.0",
+            "composer/installers": "^1.2.0",
+            "composer/semver": "^1.4",
+            "consolidation/comments": "^1.0",
+            "consolidation/config": "^1.0.0",
+            "consolidation/robo": "^1.4.12",
+            "cweagans/composer-patches": "^1.6.5",
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+            "dflydev/dot-access-data": "^1.1.0",
+            "doctrine/common": "^2.5",
+            "drupal/coder": "^8.3.1",
+            "drupal/core": "^8.7.0",
+            "drupol/phposinfo": "^1.6",
+            "drush/drush": "^9.5.0 || ^10.2.2",
+            "ext-json": "*",
+            "grasmash/drupal-security-warning": "^1.0.0",
+            "grasmash/yaml-cli": "^1.0.0",
+            "grasmash/yaml-expander": "^1.2.0",
+            "mglaman/drupal-check": ">=1.0.10 <1.1.0 || 1.1.1",
+            "oomphinc/composer-installers-extender": "^1.1",
+            "php": ">=7.2",
+            "sensiolabs/security-checker": "^5.0.0",
+            "symfony/config": "^3.0",
+            "symfony/console": "^3.4.0",
+            "symfony/twig-bridge": "^3.3",
+            "symfony/yaml": "^3.2.8",
+            "zaporylie/composer-drupal-optimizations": "^1.0",
+            "zumba/amplitude-php": "^1.0"
+        },
+        "conflict": {
+            "drupal/core": "7.*",
+            "drupal/drupal": "*"
+        },
+        "require-dev": {
+            "acquia/coding-standards": "^0.4.0",
+            "composer/composer": "^1.6.4",
+            "drupal/core-dev": "^8.8.0",
+            "knplabs/github-api": "^2.6",
+            "php-http/guzzle6-adapter": "^1.1",
+            "phpunit/phpunit": "^4.8.35 || ^6.5 || ^7",
+            "squizlabs/php_codesniffer": "^3.0.1"
+        },
+        "suggest": {
+            "davereid/drush-acquia-hook-invoke": "dev-master",
+            "hirak/prestissimo": "^0.3",
+            "typhonius/acquia_cli": "^1.0"
+        },
+        "time": "2020-04-15T16:48:04+00:00",
+        "bin": [
+            "bin/blt",
+            "bin/blt.bat"
+        ],
+        "type": "composer-plugin",
+        "extra": {
+            "branch-alias": {
+                "10.x-dev": "10.0.x-dev"
+            },
+            "class": "Acquia\\Blt\\Composer\\Plugin",
+            "composer-exit-on-patch-failure": true,
+            "installer-paths": {
+                "vendor/drupal/core": [
+                    "type:drupal-core"
+                ]
+            },
+            "phpcodesniffer-search-depth": 4
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Acquia\\Blt\\": "src/",
+                "Acquia\\Blt\\Tests\\": "tests/phpunit/src/",
+                "Acquia\\Blt\\Tests\\Robo\\": "tests/phpunit/Robo/"
+            },
+            "files": [
+                "RoboFile.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-only"
+        ],
+        "authors": [
+            {
+                "name": "Matthew Grasmick"
+            }
+        ],
+        "description": "BLT",
+        "keywords": [
+            "automation",
+            "deployment",
+            "drupal",
+            "template",
+            "testing"
+        ]
+    },
+    {
         "name": "asm89/stack-cors",
         "version": "1.2.0",
         "version_normalized": "1.2.0.0",
@@ -51,6 +162,111 @@
         "keywords": [
             "cors",
             "stack"
+        ]
+    },
+    {
+        "name": "chi-teck/drupal-code-generator",
+        "version": "1.32.0",
+        "version_normalized": "1.32.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Chi-teck/drupal-code-generator.git",
+            "reference": "0e045f7a7e747af3d8f603156bf4d73be5768246"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/0e045f7a7e747af3d8f603156bf4d73be5768246",
+            "reference": "0e045f7a7e747af3d8f603156bf4d73be5768246",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "php": ">=5.5.9",
+            "symfony/console": "^3.4 || ^4.0",
+            "symfony/filesystem": "^2.7 || ^3.4 || ^4.0",
+            "twig/twig": "^1.41 || ^2.12"
+        },
+        "time": "2020-04-16T06:45:06+00:00",
+        "bin": [
+            "bin/dcg"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/bootstrap.php"
+            ],
+            "psr-4": {
+                "DrupalCodeGenerator\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "description": "Drupal code generator"
+    },
+    {
+        "name": "composer/ca-bundle",
+        "version": "1.2.7",
+        "version_normalized": "1.2.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/ca-bundle.git",
+            "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+            "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+            "shasum": ""
+        },
+        "require": {
+            "ext-openssl": "*",
+            "ext-pcre": "*",
+            "php": "^5.3.2 || ^7.0 || ^8.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
+            "psr/log": "^1.0",
+            "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+        },
+        "time": "2020-04-08T08:27:21+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\CaBundle\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+        "keywords": [
+            "cabundle",
+            "cacert",
+            "certificate",
+            "ssl",
+            "tls"
         ]
     },
     {
@@ -240,6 +456,1098 @@
             "validation",
             "versioning"
         ]
+    },
+    {
+        "name": "composer/xdebug-handler",
+        "version": "1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/xdebug-handler.git",
+            "reference": "1ab9842d69e64fb3a01be6b656501032d1b78cb7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/1ab9842d69e64fb3a01be6b656501032d1b78cb7",
+            "reference": "1ab9842d69e64fb3a01be6b656501032d1b78cb7",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.2 || ^7.0 || ^8.0",
+            "psr/log": "^1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+        },
+        "time": "2020-03-01T12:26:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\XdebugHandler\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "John Stevenson",
+                "email": "john-stevenson@blueyonder.co.uk"
+            }
+        ],
+        "description": "Restarts a process without Xdebug.",
+        "keywords": [
+            "Xdebug",
+            "performance"
+        ]
+    },
+    {
+        "name": "consolidation/annotated-command",
+        "version": "2.12.0",
+        "version_normalized": "2.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/annotated-command.git",
+            "reference": "512a2e54c98f3af377589de76c43b24652bcb789"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/512a2e54c98f3af377589de76c43b24652bcb789",
+            "reference": "512a2e54c98f3af377589de76c43b24652bcb789",
+            "shasum": ""
+        },
+        "require": {
+            "consolidation/output-formatters": "^3.4",
+            "php": ">=5.4.5",
+            "psr/log": "^1",
+            "symfony/console": "^2.8|^3|^4",
+            "symfony/event-dispatcher": "^2.5|^3|^4",
+            "symfony/finder": "^2.5|^3|^4"
+        },
+        "require-dev": {
+            "g1a/composer-test-scenarios": "^3",
+            "php-coveralls/php-coveralls": "^1",
+            "phpunit/phpunit": "^6",
+            "squizlabs/php_codesniffer": "^2.7"
+        },
+        "time": "2019-03-08T16:55:03+00:00",
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "symfony4": {
+                    "require": {
+                        "symfony/console": "^4.0"
+                    },
+                    "config": {
+                        "platform": {
+                            "php": "7.1.3"
+                        }
+                    }
+                },
+                "symfony2": {
+                    "require": {
+                        "symfony/console": "^2.8"
+                    },
+                    "require-dev": {
+                        "phpunit/phpunit": "^4.8.36"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.4.8"
+                        }
+                    },
+                    "scenario-options": {
+                        "create-lockfile": "false"
+                    }
+                },
+                "phpunit4": {
+                    "require-dev": {
+                        "phpunit/phpunit": "^4.8.36"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.4.8"
+                        }
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\AnnotatedCommand\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "Initialize Symfony Console commands from annotated command class methods."
+    },
+    {
+        "name": "consolidation/comments",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/comments.git",
+            "reference": "908832ce3c8174a9414d741913543fd058aac5fb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/comments/zipball/908832ce3c8174a9414d741913543fd058aac5fb",
+            "reference": "908832ce3c8174a9414d741913543fd058aac5fb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "phpunit/php-code-coverage": "~2|~4",
+            "phpunit/phpunit": "^4.8",
+            "satooshi/php-coveralls": "^1.0",
+            "squizlabs/php_codesniffer": "^2.8",
+            "symfony/yaml": "^3.1"
+        },
+        "time": "2019-07-30T05:52:24+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\Comments\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "A tool for preserving comments, e.g. when parsing YAML files."
+    },
+    {
+        "name": "consolidation/config",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/config.git",
+            "reference": "cac1279bae7efb5c7fb2ca4c3ba4b8eb741a96c1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/config/zipball/cac1279bae7efb5c7fb2ca4c3ba4b8eb741a96c1",
+            "reference": "cac1279bae7efb5c7fb2ca4c3ba4b8eb741a96c1",
+            "shasum": ""
+        },
+        "require": {
+            "dflydev/dot-access-data": "^1.1.0",
+            "grasmash/expander": "^1",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "g1a/composer-test-scenarios": "^3",
+            "php-coveralls/php-coveralls": "^1",
+            "phpunit/phpunit": "^5",
+            "squizlabs/php_codesniffer": "2.*",
+            "symfony/console": "^2.5|^3|^4",
+            "symfony/yaml": "^2.8.11|^3|^4"
+        },
+        "suggest": {
+            "symfony/yaml": "Required to use Consolidation\\Config\\Loader\\YamlConfigLoader"
+        },
+        "time": "2019-03-03T19:37:04+00:00",
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "symfony4": {
+                    "require-dev": {
+                        "symfony/console": "^4.0"
+                    },
+                    "config": {
+                        "platform": {
+                            "php": "7.1.3"
+                        }
+                    }
+                },
+                "symfony2": {
+                    "require-dev": {
+                        "symfony/console": "^2.8",
+                        "symfony/event-dispatcher": "^2.8",
+                        "phpunit/phpunit": "^4.8.36"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.4.8"
+                        }
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\Config\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "Provide configuration services for a commandline tool."
+    },
+    {
+        "name": "consolidation/filter-via-dot-access-data",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/filter-via-dot-access-data.git",
+            "reference": "a53e96c6b9f7f042f5e085bf911f3493cea823c6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/filter-via-dot-access-data/zipball/a53e96c6b9f7f042f5e085bf911f3493cea823c6",
+            "reference": "a53e96c6b9f7f042f5e085bf911f3493cea823c6",
+            "shasum": ""
+        },
+        "require": {
+            "dflydev/dot-access-data": "^1.1.0",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "consolidation/robo": "^1.2.3",
+            "g1a/composer-test-scenarios": "^3",
+            "knplabs/github-api": "^2.7",
+            "php-coveralls/php-coveralls": "^1",
+            "php-http/guzzle6-adapter": "^1.1",
+            "phpunit/phpunit": "^5",
+            "squizlabs/php_codesniffer": "^2.8",
+            "symfony/console": "^2.8|^3|^4"
+        },
+        "time": "2019-01-18T06:05:07+00:00",
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "phpunit5": {
+                    "require-dev": {
+                        "phpunit/phpunit": "^5.7.27"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.6.33"
+                        }
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\Filter\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "This project uses dflydev/dot-access-data to provide simple output filtering for applications built with annotated-command / Robo."
+    },
+    {
+        "name": "consolidation/log",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/log.git",
+            "reference": "b2e887325ee90abc96b0a8b7b474cd9e7c896e3a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/log/zipball/b2e887325ee90abc96b0a8b7b474cd9e7c896e3a",
+            "reference": "b2e887325ee90abc96b0a8b7b474cd9e7c896e3a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.5",
+            "psr/log": "^1.0",
+            "symfony/console": "^2.8|^3|^4"
+        },
+        "require-dev": {
+            "g1a/composer-test-scenarios": "^3",
+            "php-coveralls/php-coveralls": "^1",
+            "phpunit/phpunit": "^6",
+            "squizlabs/php_codesniffer": "^2"
+        },
+        "time": "2019-01-01T17:30:51+00:00",
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "symfony4": {
+                    "require": {
+                        "symfony/console": "^4.0"
+                    },
+                    "config": {
+                        "platform": {
+                            "php": "7.1.3"
+                        }
+                    }
+                },
+                "symfony2": {
+                    "require": {
+                        "symfony/console": "^2.8"
+                    },
+                    "require-dev": {
+                        "phpunit/phpunit": "^4.8.36"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.4.8"
+                        }
+                    }
+                },
+                "phpunit4": {
+                    "require-dev": {
+                        "phpunit/phpunit": "^4.8.36"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.4.8"
+                        }
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\Log\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components."
+    },
+    {
+        "name": "consolidation/output-formatters",
+        "version": "3.5.0",
+        "version_normalized": "3.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/output-formatters.git",
+            "reference": "99ec998ffb697e0eada5aacf81feebfb13023605"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/99ec998ffb697e0eada5aacf81feebfb13023605",
+            "reference": "99ec998ffb697e0eada5aacf81feebfb13023605",
+            "shasum": ""
+        },
+        "require": {
+            "dflydev/dot-access-data": "^1.1.0",
+            "php": ">=5.4.0",
+            "symfony/console": "^2.8|^3|^4",
+            "symfony/finder": "^2.5|^3|^4"
+        },
+        "require-dev": {
+            "g1a/composer-test-scenarios": "^3",
+            "php-coveralls/php-coveralls": "^1",
+            "phpunit/phpunit": "^5.7.27",
+            "squizlabs/php_codesniffer": "^2.7",
+            "symfony/var-dumper": "^2.8|^3|^4",
+            "victorjonsson/markdowndocs": "^1.3"
+        },
+        "suggest": {
+            "symfony/var-dumper": "For using the var_dump formatter"
+        },
+        "time": "2019-05-30T23:16:01+00:00",
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "symfony4": {
+                    "require": {
+                        "symfony/console": "^4.0"
+                    },
+                    "require-dev": {
+                        "phpunit/phpunit": "^6"
+                    },
+                    "config": {
+                        "platform": {
+                            "php": "7.1.3"
+                        }
+                    }
+                },
+                "symfony3": {
+                    "require": {
+                        "symfony/console": "^3.4",
+                        "symfony/finder": "^3.4",
+                        "symfony/var-dumper": "^3.4"
+                    },
+                    "config": {
+                        "platform": {
+                            "php": "5.6.32"
+                        }
+                    }
+                },
+                "symfony2": {
+                    "require": {
+                        "symfony/console": "^2.8"
+                    },
+                    "require-dev": {
+                        "phpunit/phpunit": "^4.8.36"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.4.8"
+                        }
+                    },
+                    "scenario-options": {
+                        "create-lockfile": "false"
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\OutputFormatters\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "Format text by applying transformations provided by plug-in formatters."
+    },
+    {
+        "name": "consolidation/robo",
+        "version": "1.4.12",
+        "version_normalized": "1.4.12.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/Robo.git",
+            "reference": "eb45606f498b3426b9a98b7c85e300666a968e51"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/Robo/zipball/eb45606f498b3426b9a98b7c85e300666a968e51",
+            "reference": "eb45606f498b3426b9a98b7c85e300666a968e51",
+            "shasum": ""
+        },
+        "require": {
+            "consolidation/annotated-command": "^2.11.0|^4.1",
+            "consolidation/config": "^1.2.1",
+            "consolidation/log": "^1.1.1|^2",
+            "consolidation/output-formatters": "^3.1.13|^4.1",
+            "consolidation/self-update": "^1.1.5",
+            "grasmash/yaml-expander": "^1.4",
+            "league/container": "^2.4.1",
+            "php": ">=5.5.0",
+            "symfony/console": "^2.8|^3|^4",
+            "symfony/event-dispatcher": "^2.5|^3|^4",
+            "symfony/filesystem": "^2.5|^3|^4",
+            "symfony/finder": "^2.5|^3|^4",
+            "symfony/process": "^2.5|^3|^4"
+        },
+        "replace": {
+            "codegyre/robo": "< 1.0"
+        },
+        "require-dev": {
+            "g1a/composer-test-scenarios": "^3",
+            "natxet/cssmin": "3.0.4",
+            "patchwork/jsqueeze": "^2",
+            "pear/archive_tar": "^1.4.4",
+            "php-coveralls/php-coveralls": "^1",
+            "phpunit/phpunit": "^5.7.27",
+            "squizlabs/php_codesniffer": "^3"
+        },
+        "suggest": {
+            "henrikbjorn/lurker": "For monitoring filesystem changes in taskWatch",
+            "natxet/CssMin": "For minifying CSS files in taskMinify",
+            "patchwork/jsqueeze": "For minifying JS files in taskMinify",
+            "pear/archive_tar": "Allows tar archives to be created and extracted in taskPack and taskExtract, respectively."
+        },
+        "time": "2020-02-18T17:31:26+00:00",
+        "bin": [
+            "robo"
+        ],
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "symfony4": {
+                    "require": {
+                        "symfony/console": "^4"
+                    },
+                    "config": {
+                        "platform": {
+                            "php": "7.1.3"
+                        }
+                    }
+                },
+                "symfony2": {
+                    "require": {
+                        "symfony/console": "^2.8"
+                    },
+                    "require-dev": {
+                        "phpunit/phpunit": "^4.8.36"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.5.9"
+                        }
+                    },
+                    "scenario-options": {
+                        "create-lockfile": "false"
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Robo\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Davert",
+                "email": "davert.php@resend.cc"
+            }
+        ],
+        "description": "Modern task runner"
+    },
+    {
+        "name": "consolidation/self-update",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/self-update.git",
+            "reference": "dba6b2c0708f20fa3ba8008a2353b637578849b4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/self-update/zipball/dba6b2c0708f20fa3ba8008a2353b637578849b4",
+            "reference": "dba6b2c0708f20fa3ba8008a2353b637578849b4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0",
+            "symfony/console": "^2.8|^3|^4|^5",
+            "symfony/filesystem": "^2.5|^3|^4|^5"
+        },
+        "time": "2020-04-13T02:49:20+00:00",
+        "bin": [
+            "scripts/release"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "SelfUpdate\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexander Menk",
+                "email": "menk@mestrona.net"
+            },
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "Provides a self:update command for Symfony Console applications."
+    },
+    {
+        "name": "consolidation/site-alias",
+        "version": "3.0.0",
+        "version_normalized": "3.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/site-alias.git",
+            "reference": "8cfd3b6ab6d541086fc970bf850864293b284e6f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/site-alias/zipball/8cfd3b6ab6d541086fc970bf850864293b284e6f",
+            "reference": "8cfd3b6ab6d541086fc970bf850864293b284e6f",
+            "shasum": ""
+        },
+        "require": {
+            "consolidation/config": "^1.2.1",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "consolidation/robo": "^1.2.3",
+            "g1a/composer-test-scenarios": "^3",
+            "knplabs/github-api": "^2.7",
+            "php-coveralls/php-coveralls": "^1",
+            "php-http/guzzle6-adapter": "^1.1",
+            "phpunit/phpunit": "^6",
+            "squizlabs/php_codesniffer": "^2.8",
+            "symfony/console": "^2.8|^3|^4",
+            "symfony/yaml": "~2.3|^3"
+        },
+        "time": "2019-03-12T17:31:48+00:00",
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "phpunit5": {
+                    "require-dev": {
+                        "phpunit/phpunit": "^5.7.27"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.6.33"
+                        }
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\SiteAlias\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Moshe Weitzman",
+                "email": "weitzman@tejasa.com"
+            },
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "Manage alias records for local and remote sites."
+    },
+    {
+        "name": "consolidation/site-process",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/site-process.git",
+            "reference": "f3211fa4c60671c6f068184221f06f932556e443"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/site-process/zipball/f3211fa4c60671c6f068184221f06f932556e443",
+            "reference": "f3211fa4c60671c6f068184221f06f932556e443",
+            "shasum": ""
+        },
+        "require": {
+            "consolidation/config": "^1.2.1",
+            "consolidation/site-alias": "^3",
+            "php": ">=5.6.0",
+            "symfony/process": "^3.4"
+        },
+        "require-dev": {
+            "consolidation/robo": "^1.3",
+            "g1a/composer-test-scenarios": "^3",
+            "knplabs/github-api": "^2.7",
+            "php-coveralls/php-coveralls": "^1",
+            "php-http/guzzle6-adapter": "^1.1",
+            "phpunit/phpunit": "^6",
+            "squizlabs/php_codesniffer": "^2.8"
+        },
+        "time": "2019-09-10T17:56:24+00:00",
+        "type": "library",
+        "extra": {
+            "scenarios": {
+                "phpunit5": {
+                    "require-dev": {
+                        "phpunit/phpunit": "^5.7.27"
+                    },
+                    "remove": [
+                        "php-coveralls/php-coveralls"
+                    ],
+                    "config": {
+                        "platform": {
+                            "php": "5.6.33"
+                        }
+                    }
+                }
+            },
+            "branch-alias": {
+                "dev-master": "0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\SiteProcess\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            },
+            {
+                "name": "Moshe Weitzman",
+                "email": "weitzman@tejasa.com"
+            }
+        ],
+        "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call."
+    },
+    {
+        "name": "container-interop/container-interop",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/container-interop/container-interop.git",
+            "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+            "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+            "shasum": ""
+        },
+        "require": {
+            "psr/container": "^1.0"
+        },
+        "time": "2017-02-14T19:40:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Interop\\Container\\": "src/Interop/Container/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+        "homepage": "https://github.com/container-interop/container-interop",
+        "abandoned": "psr/container"
+    },
+    {
+        "name": "cweagans/composer-patches",
+        "version": "1.6.7",
+        "version_normalized": "1.6.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cweagans/composer-patches.git",
+            "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
+            "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "composer/composer": "~1.0",
+            "phpunit/phpunit": "~4.6"
+        },
+        "time": "2019-08-29T20:11:49+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "cweagans\\Composer\\Patches"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "cweagans\\Composer\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Cameron Eagans",
+                "email": "me@cweagans.net"
+            }
+        ],
+        "description": "Provides a way to patch Composer packages."
+    },
+    {
+        "name": "dealerdirect/phpcodesniffer-composer-installer",
+        "version": "v0.5.0",
+        "version_normalized": "0.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer.git",
+            "reference": "e749410375ff6fb7a040a68878c656c2e610b132"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Dealerdirect/phpcodesniffer-composer-installer/zipball/e749410375ff6fb7a040a68878c656c2e610b132",
+            "reference": "e749410375ff6fb7a040a68878c656c2e610b132",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "php": "^5.3|^7",
+            "squizlabs/php_codesniffer": "^2|^3"
+        },
+        "require-dev": {
+            "composer/composer": "*",
+            "phpcompatibility/php-compatibility": "^9.0",
+            "sensiolabs/security-checker": "^4.1.0"
+        },
+        "time": "2018-10-26T13:21:45+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Franck Nijhof",
+                "email": "franck.nijhof@dealerdirect.com",
+                "homepage": "http://www.frenck.nl",
+                "role": "Developer / IT Manager"
+            }
+        ],
+        "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
+        "homepage": "http://www.dealerdirect.com",
+        "keywords": [
+            "PHPCodeSniffer",
+            "PHP_CodeSniffer",
+            "code quality",
+            "codesniffer",
+            "composer",
+            "installer",
+            "phpcs",
+            "plugin",
+            "qa",
+            "quality",
+            "standard",
+            "standards",
+            "style guide",
+            "stylecheck",
+            "tests"
+        ]
+    },
+    {
+        "name": "dflydev/dot-access-data",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dflydev/dflydev-dot-access-data.git",
+            "reference": "3fbd874921ab2c041e899d044585a2ab9795df8a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/3fbd874921ab2c041e899d044585a2ab9795df8a",
+            "reference": "3fbd874921ab2c041e899d044585a2ab9795df8a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2017-01-20T21:14:22+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Dflydev\\DotAccessData": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dragonfly Development Inc.",
+                "email": "info@dflydev.com",
+                "homepage": "http://dflydev.com"
+            },
+            {
+                "name": "Beau Simensen",
+                "email": "beau@dflydev.com",
+                "homepage": "http://beausimensen.com"
+            },
+            {
+                "name": "Carlos Frutos",
+                "email": "carlos@kiwing.it",
+                "homepage": "https://github.com/cfrutos"
+            }
+        ],
+        "description": "Given a deep data structure, access data by dot notation.",
+        "homepage": "https://github.com/dflydev/dflydev-dot-access-data",
+        "keywords": [
+            "access",
+            "data",
+            "dot",
+            "notation"
+        ]
+    },
+    {
+        "name": "dnoegel/php-xdg-base-dir",
+        "version": "v0.1.1",
+        "version_normalized": "0.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dnoegel/php-xdg-base-dir.git",
+            "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
+            "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~7.0|~6.0|~5.0|~4.8.35"
+        },
+        "time": "2019-12-04T15:06:13+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "XdgBaseDir\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "implementation of xdg base directory specification for php"
     },
     {
         "name": "doctrine/annotations",
@@ -722,6 +2030,46 @@
         }
     },
     {
+        "name": "drupal/coder",
+        "version": "8.3.9",
+        "version_normalized": "8.3.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/coder.git",
+            "reference": "d51e0b8c6561e21c0545d04b5410a7bed7ee7c6b"
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "php": ">=7.0.8",
+            "squizlabs/php_codesniffer": "^3.5.5",
+            "symfony/yaml": ">=2.0.5"
+        },
+        "require-dev": {
+            "phpstan/phpstan": "^0.12.5",
+            "phpunit/phpunit": "^6.0 || ^7.0"
+        },
+        "time": "2020-05-08T10:20:59+00:00",
+        "type": "phpcodesniffer-standard",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Drupal\\": "coder_sniffer/Drupal/",
+                "DrupalPractice\\": "coder_sniffer/DrupalPractice/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "description": "Coder is a library to review Drupal code.",
+        "homepage": "https://www.drupal.org/project/coder",
+        "keywords": [
+            "code review",
+            "phpcs",
+            "standards"
+        ]
+    },
+    {
         "name": "drupal/core",
         "version": "8.8.5",
         "version_normalized": "8.8.5.0",
@@ -899,6 +2247,7 @@
             "drupal/workflows": "self.version",
             "drupal/workspaces": "self.version"
         },
+        "time": "2020-04-02T19:01:19+00:00",
         "type": "drupal-core",
         "extra": {
             "drupal-scaffold": {
@@ -946,14 +2295,7 @@
                 "lib/Drupal/Core/Site/Settings.php"
             ]
         },
-        "scripts": {
-            "pre-autoload-dump": [
-                "Drupal\\Core\\Composer\\Composer::preAutoloadDump"
-            ],
-            "post-autoload-dump": [
-                "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
-            ]
-        },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
@@ -984,6 +2326,7 @@
         "require-dev": {
             "composer/composer": "^1.8@stable"
         },
+        "time": "2020-03-10T10:15:17+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Drupal\\Composer\\Plugin\\Scaffold\\Plugin",
@@ -997,6 +2340,7 @@
                 "Drupal\\Composer\\Plugin\\Scaffold\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
@@ -1025,6 +2369,7 @@
             "composer-plugin-api": "^1.1",
             "php": ">=7.0.8"
         },
+        "time": "2020-02-21T09:36:23+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Drupal\\Composer\\Plugin\\ProjectMessage\\MessagePlugin"
@@ -1035,6 +2380,7 @@
                 "Drupal\\Composer\\Plugin\\ProjectMessage\\": "."
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
@@ -1117,7 +2463,9 @@
         "conflict": {
             "webflo/drupal-core-strict": "*"
         },
+        "time": "2020-04-02T19:01:19+00:00",
         "type": "metapackage",
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
@@ -3125,6 +4473,186 @@
         }
     },
     {
+        "name": "drupol/phposinfo",
+        "version": "1.6.3",
+        "version_normalized": "1.6.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/drupol/phposinfo.git",
+            "reference": "f5dbd4dd789b69f8ff59b6b19bf0307d1dc6b144"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/drupol/phposinfo/zipball/f5dbd4dd789b69f8ff59b6b19bf0307d1dc6b144",
+            "reference": "f5dbd4dd789b69f8ff59b6b19bf0307d1dc6b144",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">= 7.1.3"
+        },
+        "require-dev": {
+            "drupol/php-conventions": "^1.6.11",
+            "friends-of-phpspec/phpspec-code-coverage": "^4.3.2",
+            "infection/infection": "^0.13.6 || ^0.15.0",
+            "phpspec/phpspec": "^5.1.2 || ^6.1.1",
+            "phptaskman/changelog": "^1.0",
+            "scrutinizer/ocular": "^1.6"
+        },
+        "time": "2019-12-25T21:04:04+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "drupol\\phposinfo\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pol Dellaiera",
+                "email": "pol.dellaiera@protonmail.com"
+            }
+        ],
+        "description": "Try to guess the host operating system.",
+        "keywords": [
+            "operating system detection"
+        ]
+    },
+    {
+        "name": "drush/drush",
+        "version": "10.2.2",
+        "version_normalized": "10.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/drush-ops/drush.git",
+            "reference": "8307a4e7dae9c63a279d8b59b9dca6c1973576c2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/drush-ops/drush/zipball/8307a4e7dae9c63a279d8b59b9dca6c1973576c2",
+            "reference": "8307a4e7dae9c63a279d8b59b9dca6c1973576c2",
+            "shasum": ""
+        },
+        "require": {
+            "chi-teck/drupal-code-generator": "^1.30.5",
+            "composer/semver": "^1.4",
+            "consolidation/config": "^1.2",
+            "consolidation/filter-via-dot-access-data": "^1",
+            "consolidation/robo": "^1 || ^2",
+            "consolidation/site-alias": "^3.0.0@stable",
+            "consolidation/site-process": "^2.1 || ^4",
+            "ext-dom": "*",
+            "grasmash/yaml-expander": "^1.1.1",
+            "league/container": "~2",
+            "php": ">=7.1.3",
+            "psr/log": "~1.0",
+            "psy/psysh": "~0.6",
+            "symfony/event-dispatcher": "^3.4 || ^4.0",
+            "symfony/finder": "^3.4 || ^4.0",
+            "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0",
+            "symfony/yaml": "^3.4 || ^4.0",
+            "webflo/drupal-finder": "^1.2",
+            "webmozart/path-util": "^2.1.0"
+        },
+        "require-dev": {
+            "composer/installers": "^1.7",
+            "cweagans/composer-patches": "~1.0",
+            "drupal/alinks": "1.0.0",
+            "drupal/core-recommended": "^8.8",
+            "g1a/composer-test-scenarios": "^3",
+            "lox/xhprof": "dev-master",
+            "phpunit/phpunit": "^4.8.36 || ^6.1",
+            "squizlabs/php_codesniffer": "^2.7 || ^3",
+            "vlucas/phpdotenv": "^2.4"
+        },
+        "time": "2020-02-26T21:07:53+00:00",
+        "bin": [
+            "drush"
+        ],
+        "type": "library",
+        "extra": {
+            "installer-paths": {
+                "sut/core": [
+                    "type:drupal-core"
+                ],
+                "sut/libraries/{$name}": [
+                    "type:drupal-library"
+                ],
+                "sut/modules/unish/{$name}": [
+                    "drupal/devel"
+                ],
+                "sut/themes/unish/{$name}": [
+                    "drupal/empty_theme"
+                ],
+                "sut/modules/contrib/{$name}": [
+                    "type:drupal-module"
+                ],
+                "sut/profiles/contrib/{$name}": [
+                    "type:drupal-profile"
+                ],
+                "sut/themes/contrib/{$name}": [
+                    "type:drupal-theme"
+                ],
+                "sut/drush/contrib/{$name}": [
+                    "type:drupal-drush"
+                ]
+            },
+            "branch-alias": {
+                "dev-master": "10.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Drush\\": "src/",
+                "Drush\\Internal\\": "src/internal-forks"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Moshe Weitzman",
+                "email": "weitzman@tejasa.com"
+            },
+            {
+                "name": "Owen Barton",
+                "email": "drupal@owenbarton.com"
+            },
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            },
+            {
+                "name": "Jonathan Araña Cruz",
+                "email": "jonhattan@faita.net"
+            },
+            {
+                "name": "Jonathan Hedstrom",
+                "email": "jhedstrom@gmail.com"
+            },
+            {
+                "name": "Christopher Gervais",
+                "email": "chris@ergonlogic.com"
+            },
+            {
+                "name": "Dave Reid",
+                "email": "dave@davereid.net"
+            },
+            {
+                "name": "Damian Lee",
+                "email": "damiankloip@googlemail.com"
+            }
+        ],
+        "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
+        "homepage": "http://www.drush.org"
+    },
+    {
         "name": "easyrdf/easyrdf",
         "version": "0.9.1",
         "version_normalized": "0.9.1.0",
@@ -3297,6 +4825,208 @@
             "shp",
             "wkt"
         ]
+    },
+    {
+        "name": "grasmash/drupal-security-warning",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/grasmash/drupal-security-warning.git",
+            "reference": "cfc5424c84df02be9d094f491e5b57063c15cd72"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/grasmash/drupal-security-warning/zipball/cfc5424c84df02be9d094f491e5b57063c15cd72",
+            "reference": "cfc5424c84df02be9d094f491e5b57063c15cd72",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "require-dev": {
+            "composer/composer": "^1.0",
+            "phpunit/phpunit": "^5.7.0",
+            "squizlabs/php_codesniffer": "^2.7",
+            "symfony/filesystem": "^3.2.0",
+            "symfony/process": "^3.2.0"
+        },
+        "time": "2017-10-10T14:47:08+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "grasmash\\DrupalSecurityWarning\\Composer\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "grasmash\\DrupalSecurityWarning\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Matthew Grasmick"
+            }
+        ],
+        "description": "Warns users installing Drupal project versions not supported by Security Team.",
+        "keywords": [
+            "drupal",
+            "security"
+        ]
+    },
+    {
+        "name": "grasmash/expander",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/grasmash/expander.git",
+            "reference": "95d6037344a4be1dd5f8e0b0b2571a28c397578f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/grasmash/expander/zipball/95d6037344a4be1dd5f8e0b0b2571a28c397578f",
+            "reference": "95d6037344a4be1dd5f8e0b0b2571a28c397578f",
+            "shasum": ""
+        },
+        "require": {
+            "dflydev/dot-access-data": "^1.1.0",
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "greg-1-anderson/composer-test-scenarios": "^1",
+            "phpunit/phpunit": "^4|^5.5.4",
+            "satooshi/php-coveralls": "^1.0.2|dev-master",
+            "squizlabs/php_codesniffer": "^2.7"
+        },
+        "time": "2017-12-21T22:14:55+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Grasmash\\Expander\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matthew Grasmick"
+            }
+        ],
+        "description": "Expands internal property references in PHP arrays file."
+    },
+    {
+        "name": "grasmash/yaml-cli",
+        "version": "1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/grasmash/yaml-cli.git",
+            "reference": "2db877e743520f663ce24ee7a339426efe0efbf9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/grasmash/yaml-cli/zipball/2db877e743520f663ce24ee7a339426efe0efbf9",
+            "reference": "2db877e743520f663ce24ee7a339426efe0efbf9",
+            "shasum": ""
+        },
+        "require": {
+            "dflydev/dot-access-data": "^1.1.0",
+            "php": ">=5.6",
+            "symfony/console": "^2.8.11|^3.2",
+            "symfony/filesystem": "^2.8.11|^3.2",
+            "symfony/yaml": "^2.8.11|^3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.5.4",
+            "satooshi/php-coveralls": "^1.0",
+            "squizlabs/php_codesniffer": "^2.7"
+        },
+        "time": "2019-08-17T00:16:24+00:00",
+        "bin": [
+            "bin/yaml-cli"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Grasmash\\YamlCli\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matthew Grasmick"
+            }
+        ],
+        "description": "A command line tool for reading and manipulating yaml files."
+    },
+    {
+        "name": "grasmash/yaml-expander",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/grasmash/yaml-expander.git",
+            "reference": "3f0f6001ae707a24f4d9733958d77d92bf9693b1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/grasmash/yaml-expander/zipball/3f0f6001ae707a24f4d9733958d77d92bf9693b1",
+            "reference": "3f0f6001ae707a24f4d9733958d77d92bf9693b1",
+            "shasum": ""
+        },
+        "require": {
+            "dflydev/dot-access-data": "^1.1.0",
+            "php": ">=5.4",
+            "symfony/yaml": "^2.8.11|^3|^4"
+        },
+        "require-dev": {
+            "greg-1-anderson/composer-test-scenarios": "^1",
+            "phpunit/phpunit": "^4.8|^5.5.4",
+            "satooshi/php-coveralls": "^1.0.2|dev-master",
+            "squizlabs/php_codesniffer": "^2.7"
+        },
+        "time": "2017-12-16T16:06:03+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Grasmash\\YamlExpander\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matthew Grasmick"
+            }
+        ],
+        "description": "Expands internal property references in a yaml file."
     },
     {
         "name": "guzzlehttp/guzzle",
@@ -3492,6 +5222,126 @@
         ]
     },
     {
+        "name": "jean85/pretty-package-versions",
+        "version": "1.2",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Jean85/pretty-package-versions.git",
+            "reference": "75c7effcf3f77501d0e0caa75111aff4daa0dd48"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/75c7effcf3f77501d0e0caa75111aff4daa0dd48",
+            "reference": "75c7effcf3f77501d0e0caa75111aff4daa0dd48",
+            "shasum": ""
+        },
+        "require": {
+            "ocramius/package-versions": "^1.2.0",
+            "php": "^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6.0"
+        },
+        "time": "2018-06-13T13:22:40+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Jean85\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alessandro Lai",
+                "email": "alessandro.lai85@gmail.com"
+            }
+        ],
+        "description": "A wrapper for ocramius/package-versions to get pretty versions strings",
+        "keywords": [
+            "composer",
+            "package",
+            "release",
+            "versions"
+        ]
+    },
+    {
+        "name": "league/container",
+        "version": "2.4.1",
+        "version_normalized": "2.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/container.git",
+            "reference": "43f35abd03a12977a60ffd7095efd6a7808488c0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/container/zipball/43f35abd03a12977a60ffd7095efd6a7808488c0",
+            "reference": "43f35abd03a12977a60ffd7095efd6a7808488c0",
+            "shasum": ""
+        },
+        "require": {
+            "container-interop/container-interop": "^1.2",
+            "php": "^5.4.0 || ^7.0"
+        },
+        "provide": {
+            "container-interop/container-interop-implementation": "^1.2",
+            "psr/container-implementation": "^1.0"
+        },
+        "replace": {
+            "orno/di": "~2.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2017-05-10T09:20:27+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev",
+                "dev-1.x": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\Container\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Phil Bennett",
+                "email": "philipobenito@gmail.com",
+                "homepage": "http://www.philipobenito.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "A fast and intuitive dependency injection container.",
+        "homepage": "https://github.com/thephpleague/container",
+        "keywords": [
+            "container",
+            "dependency",
+            "di",
+            "injection",
+            "league",
+            "provider",
+            "service"
+        ]
+    },
+    {
         "name": "masterminds/html5",
         "version": "2.3.0",
         "version_normalized": "2.3.0.0",
@@ -3586,6 +5436,502 @@
             "jquery",
             "plugin"
         ]
+    },
+    {
+        "name": "mglaman/drupal-check",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mglaman/drupal-check.git",
+            "reference": "3ec4b60f86caa6fabd8067726908afd66ee3ec01"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mglaman/drupal-check/zipball/3ec4b60f86caa6fabd8067726908afd66ee3ec01",
+            "reference": "3ec4b60f86caa6fabd8067726908afd66ee3ec01",
+            "shasum": ""
+        },
+        "require": {
+            "composer/xdebug-handler": "^1.3",
+            "jean85/pretty-package-versions": "^1.2",
+            "mglaman/phpstan-drupal": "^0.12",
+            "nette/neon": "^3.1",
+            "php": "~7.2",
+            "phpstan/phpstan": "^0.12",
+            "phpstan/phpstan-deprecation-rules": "^0.12",
+            "symfony/console": "~3.2 || ~4.0",
+            "symfony/process": "~3.2 || ~4.0",
+            "webflo/drupal-finder": "^1.1"
+        },
+        "conflict": {
+            "ocramius/package-versions": ">=1.5"
+        },
+        "require-dev": {
+            "squizlabs/php_codesniffer": "^3.4"
+        },
+        "time": "2020-02-27T03:18:28+00:00",
+        "bin": [
+            "drupal-check"
+        ],
+        "type": "project",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "DrupalCheck\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matt Glaman",
+                "email": "nmd.matt@gmail.com"
+            }
+        ],
+        "description": "CLI tool for running checks on a Drupal code base"
+    },
+    {
+        "name": "mglaman/phpstan-drupal",
+        "version": "0.12.3",
+        "version_normalized": "0.12.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mglaman/phpstan-drupal.git",
+            "reference": "c72367d12498c9f5d3738852d4089b4570690a55"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/c72367d12498c9f5d3738852d4089b4570690a55",
+            "reference": "c72367d12498c9f5d3738852d4089b4570690a55",
+            "shasum": ""
+        },
+        "require": {
+            "nette/finder": "^2.5",
+            "php": "^7.1",
+            "phpstan/phpstan": "^0.12.0",
+            "symfony/yaml": "~3.4.5|^4.2",
+            "webflo/drupal-finder": "^1.2"
+        },
+        "require-dev": {
+            "composer/installers": "^1.6",
+            "drupal/core-recommended": "^8.8@alpha",
+            "drush/drush": "^9.6",
+            "phpstan/phpstan-deprecation-rules": "~0.12.0",
+            "phpstan/phpstan-strict-rules": "^0.12.0",
+            "phpunit/phpunit": "^7.5",
+            "squizlabs/php_codesniffer": "^3.3"
+        },
+        "suggest": {
+            "phpstan/phpstan-deprecation-rules": "For catching deprecations, especially in Drupal core."
+        },
+        "time": "2020-03-31T19:03:49+00:00",
+        "type": "phpstan-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.12-dev"
+            },
+            "installer-paths": {
+                "tests/fixtures/drupal/core": [
+                    "type:drupal-core"
+                ],
+                "tests/fixtures/drupal/libraries/{$name}": [
+                    "type:drupal-library"
+                ],
+                "tests/fixtures/drupal/modules/contrib/{$name}": [
+                    "type:drupal-module"
+                ],
+                "tests/fixtures/drupal/profiles/contrib/{$name}": [
+                    "type:drupal-profile"
+                ],
+                "tests/fixtures/drupal/themes/contrib/{$name}": [
+                    "type:drupal-theme"
+                ]
+            },
+            "phpstan": {
+                "includes": [
+                    "extension.neon"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PHPStan\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matt Glaman",
+                "email": "nmd.matt@gmail.com"
+            }
+        ],
+        "description": "Drupal extension and rules for PHPStan"
+    },
+    {
+        "name": "nette/finder",
+        "version": "v2.5.2",
+        "version_normalized": "2.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nette/finder.git",
+            "reference": "4ad2c298eb8c687dd0e74ae84206a4186eeaed50"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nette/finder/zipball/4ad2c298eb8c687dd0e74ae84206a4186eeaed50",
+            "reference": "4ad2c298eb8c687dd0e74ae84206a4186eeaed50",
+            "shasum": ""
+        },
+        "require": {
+            "nette/utils": "^2.4 || ^3.0",
+            "php": ">=7.1"
+        },
+        "conflict": {
+            "nette/nette": "<2.2"
+        },
+        "require-dev": {
+            "nette/tester": "^2.0",
+            "phpstan/phpstan": "^0.12",
+            "tracy/tracy": "^2.3"
+        },
+        "time": "2020-01-03T20:35:40+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause",
+            "GPL-2.0",
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "David Grudl",
+                "homepage": "https://davidgrudl.com"
+            },
+            {
+                "name": "Nette Community",
+                "homepage": "https://nette.org/contributors"
+            }
+        ],
+        "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
+        "homepage": "https://nette.org",
+        "keywords": [
+            "filesystem",
+            "glob",
+            "iterator",
+            "nette"
+        ]
+    },
+    {
+        "name": "nette/neon",
+        "version": "v3.1.2",
+        "version_normalized": "3.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nette/neon.git",
+            "reference": "3c3dcbc6bf6c80dc97b1fc4ba9a22ae67930fc0e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nette/neon/zipball/3c3dcbc6bf6c80dc97b1fc4ba9a22ae67930fc0e",
+            "reference": "3c3dcbc6bf6c80dc97b1fc4ba9a22ae67930fc0e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-iconv": "*",
+            "ext-json": "*",
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "nette/tester": "^2.0",
+            "phpstan/phpstan": "^0.12",
+            "tracy/tracy": "^2.3"
+        },
+        "time": "2020-03-04T11:47:04+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause",
+            "GPL-2.0-only",
+            "GPL-3.0-only"
+        ],
+        "authors": [
+            {
+                "name": "David Grudl",
+                "homepage": "https://davidgrudl.com"
+            },
+            {
+                "name": "Nette Community",
+                "homepage": "https://nette.org/contributors"
+            }
+        ],
+        "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+        "homepage": "https://ne-on.org",
+        "keywords": [
+            "export",
+            "import",
+            "neon",
+            "nette",
+            "yaml"
+        ]
+    },
+    {
+        "name": "nette/utils",
+        "version": "v3.1.1",
+        "version_normalized": "3.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nette/utils.git",
+            "reference": "2c17d16d8887579ae1c0898ff94a3668997fd3eb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nette/utils/zipball/2c17d16d8887579ae1c0898ff94a3668997fd3eb",
+            "reference": "2c17d16d8887579ae1c0898ff94a3668997fd3eb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "nette/tester": "~2.0",
+            "phpstan/phpstan": "^0.12",
+            "tracy/tracy": "^2.3"
+        },
+        "suggest": {
+            "ext-gd": "to use Image",
+            "ext-iconv": "to use Strings::webalize() and toAscii()",
+            "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+            "ext-json": "to use Nette\\Utils\\Json",
+            "ext-mbstring": "to use Strings::lower() etc...",
+            "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()",
+            "ext-xml": "to use Strings::length() etc. when mbstring is not available"
+        },
+        "time": "2020-02-09T14:10:55+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause",
+            "GPL-2.0-only",
+            "GPL-3.0-only"
+        ],
+        "authors": [
+            {
+                "name": "David Grudl",
+                "homepage": "https://davidgrudl.com"
+            },
+            {
+                "name": "Nette Community",
+                "homepage": "https://nette.org/contributors"
+            }
+        ],
+        "description": "🛠 Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+        "homepage": "https://nette.org",
+        "keywords": [
+            "array",
+            "core",
+            "datetime",
+            "images",
+            "json",
+            "nette",
+            "paginator",
+            "password",
+            "slugify",
+            "string",
+            "unicode",
+            "utf-8",
+            "utility",
+            "validation"
+        ]
+    },
+    {
+        "name": "nikic/php-parser",
+        "version": "v4.4.0",
+        "version_normalized": "4.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikic/PHP-Parser.git",
+            "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+            "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+            "shasum": ""
+        },
+        "require": {
+            "ext-tokenizer": "*",
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "ircmaxell/php-yacc": "0.0.5",
+            "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+        },
+        "time": "2020-04-10T16:34:50+00:00",
+        "bin": [
+            "bin/php-parse"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpParser\\": "lib/PhpParser"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Nikita Popov"
+            }
+        ],
+        "description": "A PHP parser written in PHP",
+        "keywords": [
+            "parser",
+            "php"
+        ]
+    },
+    {
+        "name": "ocramius/package-versions",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Ocramius/PackageVersions.git",
+            "reference": "44af6f3a2e2e04f2af46bcb302ad9600cba41c7d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/44af6f3a2e2e04f2af46bcb302ad9600cba41c7d",
+            "reference": "44af6f3a2e2e04f2af46bcb302ad9600cba41c7d",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0.0",
+            "php": "^7.1.0"
+        },
+        "require-dev": {
+            "composer/composer": "^1.6.3",
+            "doctrine/coding-standard": "^5.0.1",
+            "ext-zip": "*",
+            "infection/infection": "^0.7.1",
+            "phpunit/phpunit": "^7.5.17"
+        },
+        "time": "2019-11-15T16:17:10+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "PackageVersions\\Installer",
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PackageVersions\\": "src/PackageVersions"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Marco Pivetta",
+                "email": "ocramius@gmail.com"
+            }
+        ],
+        "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)"
+    },
+    {
+        "name": "oomphinc/composer-installers-extender",
+        "version": "v1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/oomphinc/composer-installers-extender.git",
+            "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+            "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "composer/installers": "^1.0"
+        },
+        "time": "2017-03-31T16:57:39+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "OomphInc\\ComposerInstallersExtender\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stephen Beemsterboer",
+                "email": "stephen@oomphinc.com",
+                "homepage": "https://github.com/balbuf"
+            }
+        ],
+        "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
+        "homepage": "http://www.oomphinc.com/"
     },
     {
         "name": "paragonie/random_compat",
@@ -3893,6 +6239,103 @@
         "homepage": "https://github.com/phayes/geoPHP"
     },
     {
+        "name": "phpstan/phpstan",
+        "version": "0.12.25",
+        "version_normalized": "0.12.25.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpstan/phpstan.git",
+            "reference": "9619551d68b2d4c0d681a8df73f3c847c798ee64"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9619551d68b2d4c0d681a8df73f3c847c798ee64",
+            "reference": "9619551d68b2d4c0d681a8df73f3c847c798ee64",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "conflict": {
+            "phpstan/phpstan-shim": "*"
+        },
+        "time": "2020-05-10T20:36:16+00:00",
+        "bin": [
+            "phpstan",
+            "phpstan.phar"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.12-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "PHPStan - PHP Static Analysis Tool"
+    },
+    {
+        "name": "phpstan/phpstan-deprecation-rules",
+        "version": "0.12.2",
+        "version_normalized": "0.12.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpstan/phpstan-deprecation-rules.git",
+            "reference": "51d21a83b97e539e1fc56c1ce42ac0f187407fb6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/51d21a83b97e539e1fc56c1ce42ac0f187407fb6",
+            "reference": "51d21a83b97e539e1fc56c1ce42ac0f187407fb6",
+            "shasum": ""
+        },
+        "require": {
+            "php": "~7.1",
+            "phpstan/phpstan": "^0.12"
+        },
+        "require-dev": {
+            "consistence/coding-standard": "^3.0.1",
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+            "jakub-onderka/php-parallel-lint": "^1.0",
+            "localheinz/composer-normalize": "^1.3.0",
+            "phing/phing": "^2.16.0",
+            "phpstan/phpstan-phpunit": "^0.12",
+            "phpunit/phpunit": "^7.0",
+            "slevomat/coding-standard": "^4.5.2"
+        },
+        "time": "2020-01-12T16:25:40+00:00",
+        "type": "phpstan-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.12-dev"
+            },
+            "phpstan": {
+                "includes": [
+                    "rules.neon"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PHPStan\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits."
+    },
+    {
         "name": "psr/container",
         "version": "1.0.0",
         "version_normalized": "1.0.0.0",
@@ -4045,6 +6488,80 @@
         ]
     },
     {
+        "name": "psy/psysh",
+        "version": "v0.10.4",
+        "version_normalized": "0.10.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bobthecow/psysh.git",
+            "reference": "a8aec1b2981ab66882a01cce36a49b6317dc3560"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a8aec1b2981ab66882a01cce36a49b6317dc3560",
+            "reference": "a8aec1b2981ab66882a01cce36a49b6317dc3560",
+            "shasum": ""
+        },
+        "require": {
+            "dnoegel/php-xdg-base-dir": "0.1.*",
+            "ext-json": "*",
+            "ext-tokenizer": "*",
+            "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
+            "php": "^8.0 || ^7.0 || ^5.5.9",
+            "symfony/console": "~5.0|~4.0|~3.0|^2.4.2|~2.3.10",
+            "symfony/var-dumper": "~5.0|~4.0|~3.0|~2.7"
+        },
+        "require-dev": {
+            "bamarni/composer-bin-plugin": "^1.2",
+            "hoa/console": "3.17.*"
+        },
+        "suggest": {
+            "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
+            "ext-pdo-sqlite": "The doc command requires SQLite to work.",
+            "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
+            "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history.",
+            "hoa/console": "A pure PHP readline implementation. You'll want this if your PHP install doesn't already support readline or libedit."
+        },
+        "time": "2020-05-03T19:32:03+00:00",
+        "bin": [
+            "bin/psysh"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.10.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/functions.php"
+            ],
+            "psr-4": {
+                "Psy\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Justin Hileman",
+                "email": "justin@justinhileman.info",
+                "homepage": "http://justinhileman.com"
+            }
+        ],
+        "description": "An interactive shell for modern PHP.",
+        "homepage": "http://psysh.org",
+        "keywords": [
+            "REPL",
+            "console",
+            "interactive",
+            "shell"
+        ]
+    },
+    {
         "name": "ralouphie/getallheaders",
         "version": "3.0.3",
         "version_normalized": "3.0.3.0",
@@ -4085,6 +6602,54 @@
             }
         ],
         "description": "A polyfill for getallheaders."
+    },
+    {
+        "name": "sensiolabs/security-checker",
+        "version": "v5.0.3",
+        "version_normalized": "5.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sensiolabs/security-checker.git",
+            "reference": "46be3f58adac13084497961e10eed9a7fb4d44d1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/46be3f58adac13084497961e10eed9a7fb4d44d1",
+            "reference": "46be3f58adac13084497961e10eed9a7fb4d44d1",
+            "shasum": ""
+        },
+        "require": {
+            "composer/ca-bundle": "^1.0",
+            "php": ">=5.5.9",
+            "symfony/console": "~2.7|~3.0|~4.0"
+        },
+        "time": "2018-12-19T17:14:59+00:00",
+        "bin": [
+            "security-checker"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "SensioLabs\\Security\\": "SensioLabs/Security"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien.potencier@gmail.com"
+            }
+        ],
+        "description": "A security checker for your composer.lock"
     },
     {
         "name": "sibyx/phpgpx",
@@ -4129,6 +6694,59 @@
             }
         ],
         "description": "A simple PHP library for GPX import/export"
+    },
+    {
+        "name": "squizlabs/php_codesniffer",
+        "version": "3.5.5",
+        "version_normalized": "3.5.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+            "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
+            "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
+            "shasum": ""
+        },
+        "require": {
+            "ext-simplexml": "*",
+            "ext-tokenizer": "*",
+            "ext-xmlwriter": "*",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+        },
+        "time": "2020-04-17T01:09:41+00:00",
+        "bin": [
+            "bin/phpcs",
+            "bin/phpcbf"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Greg Sherwood",
+                "role": "lead"
+            }
+        ],
+        "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+        "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+        "keywords": [
+            "phpcs",
+            "standards"
+        ]
     },
     {
         "name": "stack/builder",
@@ -4298,6 +6916,72 @@
             }
         ],
         "description": "Symfony ClassLoader Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/config",
+        "version": "v3.4.40",
+        "version_normalized": "3.4.40.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/config.git",
+            "reference": "3634991bea549e73c45a964c38f30ceeae6ed877"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/config/zipball/3634991bea549e73c45a964c38f30ceeae6ed877",
+            "reference": "3634991bea549e73c45a964c38f30ceeae6ed877",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/filesystem": "~2.8|~3.0|~4.0",
+            "symfony/polyfill-ctype": "~1.8"
+        },
+        "conflict": {
+            "symfony/dependency-injection": "<3.3",
+            "symfony/finder": "<3.3"
+        },
+        "require-dev": {
+            "symfony/dependency-injection": "~3.3|~4.0",
+            "symfony/event-dispatcher": "~3.3|~4.0",
+            "symfony/finder": "~3.3|~4.0",
+            "symfony/yaml": "~3.0|~4.0"
+        },
+        "suggest": {
+            "symfony/yaml": "To use the yaml reference dumper"
+        },
+        "time": "2020-04-12T14:33:46+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Config\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Config Component",
         "homepage": "https://symfony.com"
     },
     {
@@ -4568,6 +7252,109 @@
             }
         ],
         "description": "Symfony EventDispatcher Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/filesystem",
+        "version": "v3.4.40",
+        "version_normalized": "3.4.40.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/filesystem.git",
+            "reference": "78a93e5606a19d0fb490afc3c4a9b7ecd86e1515"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/filesystem/zipball/78a93e5606a19d0fb490afc3c4a9b7ecd86e1515",
+            "reference": "78a93e5606a19d0fb490afc3c4a9b7ecd86e1515",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/polyfill-ctype": "~1.8"
+        },
+        "time": "2020-04-12T16:54:01+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Filesystem\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Filesystem Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/finder",
+        "version": "v4.4.8",
+        "version_normalized": "4.4.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/finder.git",
+            "reference": "5729f943f9854c5781984ed4907bbb817735776b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/5729f943f9854c5781984ed4907bbb817735776b",
+            "reference": "5729f943f9854c5781984ed4907bbb817735776b",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "time": "2020-03-27T16:54:36+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Finder\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Finder Component",
         "homepage": "https://symfony.com"
     },
     {
@@ -5020,6 +7807,63 @@
         ]
     },
     {
+        "name": "symfony/polyfill-php72",
+        "version": "v1.17.0",
+        "version_normalized": "1.17.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-php72.git",
+            "reference": "f048e612a3905f34931127360bdd2def19a5e582"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/f048e612a3905f34931127360bdd2def19a5e582",
+            "reference": "f048e612a3905f34931127360bdd2def19a5e582",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2020-05-12T16:47:27+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.17-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Php72\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
         "name": "symfony/polyfill-util",
         "version": "v1.12.0",
         "version_normalized": "1.12.0.0",
@@ -5421,6 +8265,99 @@
         "homepage": "https://symfony.com"
     },
     {
+        "name": "symfony/twig-bridge",
+        "version": "v3.4.40",
+        "version_normalized": "3.4.40.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/twig-bridge.git",
+            "reference": "742d91e175c84fc896c4a720bfc40ce0d7b9ff67"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/742d91e175c84fc896c4a720bfc40ce0d7b9ff67",
+            "reference": "742d91e175c84fc896c4a720bfc40ce0d7b9ff67",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "twig/twig": "^1.41|^2.10"
+        },
+        "conflict": {
+            "symfony/console": "<3.4",
+            "symfony/form": "<3.4.31|>=4.0,<4.3.4"
+        },
+        "require-dev": {
+            "fig/link-util": "^1.0",
+            "symfony/asset": "~2.8|~3.0|~4.0",
+            "symfony/console": "~3.4|~4.0",
+            "symfony/dependency-injection": "~2.8|~3.0|~4.0",
+            "symfony/expression-language": "~2.8|~3.0|~4.0",
+            "symfony/finder": "~2.8|~3.0|~4.0",
+            "symfony/form": "^3.4.31|^4.3.4",
+            "symfony/http-foundation": "^3.3.11|~4.0",
+            "symfony/http-kernel": "~3.2|~4.0",
+            "symfony/polyfill-intl-icu": "~1.0",
+            "symfony/routing": "~2.8|~3.0|~4.0",
+            "symfony/security": "^2.8.31|^3.3.13|~4.0",
+            "symfony/security-acl": "~2.8|~3.0",
+            "symfony/stopwatch": "~2.8|~3.0|~4.0",
+            "symfony/templating": "~2.8|~3.0|~4.0",
+            "symfony/translation": "~2.8|~3.0|~4.0",
+            "symfony/var-dumper": "~2.8.10|~3.1.4|~3.2|~4.0",
+            "symfony/web-link": "~3.3|~4.0",
+            "symfony/workflow": "~3.3|~4.0",
+            "symfony/yaml": "~2.8|~3.0|~4.0"
+        },
+        "suggest": {
+            "symfony/asset": "For using the AssetExtension",
+            "symfony/expression-language": "For using the ExpressionExtension",
+            "symfony/finder": "",
+            "symfony/form": "For using the FormExtension",
+            "symfony/http-kernel": "For using the HttpKernelExtension",
+            "symfony/routing": "For using the RoutingExtension",
+            "symfony/security": "For using the SecurityExtension",
+            "symfony/stopwatch": "For using the StopwatchExtension",
+            "symfony/templating": "For using the TwigEngine",
+            "symfony/translation": "For using the TranslationExtension",
+            "symfony/var-dumper": "For using the DumpExtension",
+            "symfony/web-link": "For using the WebLinkExtension",
+            "symfony/yaml": "For using the YamlExtension"
+        },
+        "time": "2020-03-16T08:31:04+00:00",
+        "type": "symfony-bridge",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bridge\\Twig\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Twig Bridge",
+        "homepage": "https://symfony.com"
+    },
+    {
         "name": "symfony/validator",
         "version": "v3.4.35",
         "version_normalized": "3.4.35.0",
@@ -5507,6 +8444,84 @@
         ],
         "description": "Symfony Validator Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/var-dumper",
+        "version": "v4.4.8",
+        "version_normalized": "4.4.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-dumper.git",
+            "reference": "c587e04ce5d1aa62d534a038f574d9a709e814cf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c587e04ce5d1aa62d534a038f574d9a709e814cf",
+            "reference": "c587e04ce5d1aa62d534a038f574d9a709e814cf",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/polyfill-mbstring": "~1.0",
+            "symfony/polyfill-php72": "~1.5"
+        },
+        "conflict": {
+            "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
+            "symfony/console": "<3.4"
+        },
+        "require-dev": {
+            "ext-iconv": "*",
+            "symfony/console": "^3.4|^4.0|^5.0",
+            "symfony/process": "^4.4|^5.0",
+            "twig/twig": "^1.34|^2.4|^3.0"
+        },
+        "suggest": {
+            "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+            "ext-intl": "To show region name in time zone dump",
+            "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
+        },
+        "time": "2020-04-12T16:14:02+00:00",
+        "bin": [
+            "Resources/bin/var-dump-server"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Resources/functions/dump.php"
+            ],
+            "psr-4": {
+                "Symfony\\Component\\VarDumper\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony mechanism for exploring and dumping PHP variables",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "debug",
+            "dump"
+        ]
     },
     {
         "name": "symfony/yaml",
@@ -5727,6 +8742,191 @@
             "security",
             "stream-wrapper"
         ]
+    },
+    {
+        "name": "webflo/drupal-finder",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/webflo/drupal-finder.git",
+            "reference": "123e248e14ee8dd3fbe89fb5a733a6cf91f5820e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/webflo/drupal-finder/zipball/123e248e14ee8dd3fbe89fb5a733a6cf91f5820e",
+            "reference": "123e248e14ee8dd3fbe89fb5a733a6cf91f5820e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*"
+        },
+        "require-dev": {
+            "mikey179/vfsstream": "^1.6",
+            "phpunit/phpunit": "^4.8"
+        },
+        "time": "2019-08-02T08:06:18+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/DrupalFinder.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Florian Weber",
+                "email": "florian@webflo.org"
+            }
+        ],
+        "description": "Helper class to locate a Drupal installation from a given path."
+    },
+    {
+        "name": "webmozart/assert",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/webmozart/assert.git",
+            "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/webmozart/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+            "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.3 || ^7.0",
+            "symfony/polyfill-ctype": "^1.8"
+        },
+        "conflict": {
+            "vimeo/psalm": "<3.9.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.36 || ^7.5.13"
+        },
+        "time": "2020-04-18T12:12:48+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Webmozart\\Assert\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bernhard Schussek",
+                "email": "bschussek@gmail.com"
+            }
+        ],
+        "description": "Assertions to validate method input/output with nice error messages.",
+        "keywords": [
+            "assert",
+            "check",
+            "validate"
+        ]
+    },
+    {
+        "name": "webmozart/path-util",
+        "version": "2.3.0",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/webmozart/path-util.git",
+            "reference": "d939f7edc24c9a1bb9c0dee5cb05d8e859490725"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/webmozart/path-util/zipball/d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
+            "reference": "d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "webmozart/assert": "~1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.6",
+            "sebastian/version": "^1.0.1"
+        },
+        "time": "2015-12-17T08:42:14+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Webmozart\\PathUtil\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bernhard Schussek",
+                "email": "bschussek@gmail.com"
+            }
+        ],
+        "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths."
+    },
+    {
+        "name": "zaporylie/composer-drupal-optimizations",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zaporylie/composer-drupal-optimizations.git",
+            "reference": "fb231d92adc862a2c9276bccbc90f684816dc75d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zaporylie/composer-drupal-optimizations/zipball/fb231d92adc862a2c9276bccbc90f684816dc75d",
+            "reference": "fb231d92adc862a2c9276bccbc90f684816dc75d",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.1"
+        },
+        "require-dev": {
+            "composer/composer": "^1.6",
+            "phpunit/phpunit": "^6"
+        },
+        "time": "2019-10-02T17:01:11+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "zaporylie\\ComposerDrupalOptimizations\\Plugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "zaporylie\\ComposerDrupalOptimizations\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Jakub Piasecki",
+                "email": "jakub@piaseccy.pl"
+            }
+        ],
+        "description": "Composer plugin to improve composer performance for Drupal projects"
     },
     {
         "name": "zendframework/zend-diactoros",
@@ -5955,5 +9155,61 @@
             "zf"
         ],
         "abandoned": "laminas/laminas-stdlib"
+    },
+    {
+        "name": "zumba/amplitude-php",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zumba/amplitude-php.git",
+            "reference": "efec5ce34dde9f7b168e7d810159b9b31bbe362b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zumba/amplitude-php/zipball/efec5ce34dde9f7b168e7d810159b9b31bbe362b",
+            "reference": "efec5ce34dde9f7b168e7d810159b9b31bbe362b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.2",
+            "psr/log": "^1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "8.3.*",
+            "squizlabs/php_codesniffer": "3.4.*"
+        },
+        "time": "2019-08-08T15:19:30+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zumba\\Amplitude\\": "./src/",
+                "Zumba\\Amplitude\\Test\\": "./test/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Zumba Fitness, LLC",
+                "homepage": "https://tech.zumba.com"
+            },
+            {
+                "name": "Jonathan Foote",
+                "email": "jonathan.foote@zumba.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP SDK for Amplitude",
+        "homepage": "https://github.com/zumba/amplitude-php",
+        "keywords": [
+            "amplitude",
+            "analytics",
+            "sdk",
+            "tracking"
+        ]
     }
 ]
