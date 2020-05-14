@@ -1,0 +1,5 @@
+# Schema for the configuration files of the OBIZR2020 theme.
+
+obizr.settings:
+  type: theme_settings
+  label: 'OBIZR2020 settings'

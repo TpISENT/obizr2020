@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * OBIZR2020's theme implementation to display a Service node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('obizr/node-album') }}
+  {{ content }}
+{% endblock %}
